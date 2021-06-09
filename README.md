@@ -10,7 +10,7 @@
 
 ## Визуализации данных
 
-### ENCFF050CUG
+### Гистограммы длин ENCFF050CUG
 
 #### До конвертации
 
@@ -23,3 +23,35 @@
 #### После фильтрации (взят порог в 5000)
 
 <img src="https://github.com/gudki/hse21_H3K27me3_ZDNA_human/raw/main/images/len_hist.H3K27me3_H1.ENCFF050CUG.hg19.filtered.png" width="500"/>
+
+### Гистограммы длин ENCFF599KDF
+
+#### До конвертации
+
+<img src="https://github.com/gudki/hse21_H3K27me3_ZDNA_human/raw/main/images/len_hist.H3K27me3_H1.ENCFF599KDF.hg38.png" width="500"/>
+
+#### После конвертации
+
+<img src="https://github.com/gudki/hse21_H3K27me3_ZDNA_human/raw/main/images/len_hist.H3K27me3_H1.ENCFF599KDF.hg19.png" width="500"/>
+
+#### После фильтрации (взят порог в 5000)
+
+<img src="https://github.com/gudki/hse21_H3K27me3_ZDNA_human/raw/main/images/len_hist.H3K27me3_H1.ENCFF599KDF.hg19.filtered.png" width="500"/>
+
+### Расположение относительно генов 
+
+#### ENCFF050CUG
+
+<img src="https://github.com/gudki/hse21_H3K27me3_ZDNA_human/raw/main/images/chip_seeker.H3K27me3_H1.ENCFF050CUG.hg19.filtered.plotAnnoPie.png" width="500"/>
+
+#### ENCFF599KDF
+
+<img src="https://github.com/gudki/hse21_H3K27me3_ZDNA_human/raw/main/images/chip_seeker.H3K27me3_H1.ENCFF599KDF.hg19.filtered.plotAnnoPie.png" width="500"/>
+
+### Графики для перечесечений вторичных структур с экспериментами
+
+#### Гистограмма длин пересечений
+
+<img src="https://github.com/gudki/hse21_H3K27me3_ZDNA_human/raw/main/images/len_hist.zhunt.intersect.png" width="500"/>
+
+
