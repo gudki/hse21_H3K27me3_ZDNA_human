@@ -15,3 +15,11 @@
 #### До конвертации
 
 <img src="https://github.com/gudki/hse21_H3K27me3_ZDNA_human/raw/main/images/len_hist.H3K27me3_H1.ENCFF050CUG.hg38.png" width="500"/>
+
+#### После конвертации
+
+<img src="https://github.com/gudki/hse21_H3K27me3_ZDNA_human/raw/main/images/len_hist.H3K27me3_H1.ENCFF050CUG.hg19.png" width="500"/>
+
+#### После фильтрации (взят порог в 5000)
+
+<img src="https://github.com/gudki/hse21_H3K27me3_ZDNA_human/raw/main/images/len_hist.H3K27me3_H1.ENCFF050CUG.hg19.filtered.png" width="500"/>
