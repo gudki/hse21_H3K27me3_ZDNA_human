@@ -66,5 +66,9 @@
 
 <img src="https://github.com/gudki/hse21_H3K27me3_ZDNA_human/raw/main/images/chip_seeker.zhunt.intersect.plotAnnoPie.png" width="500"/>
 
+## Геномный браузер
 
+Ссылка на сессию: http://genome.ucsc.edu/s/gudki/H3K27me3_ZHunt
+
+chr1:165,082,335-165,091,566
 
