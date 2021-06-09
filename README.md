@@ -50,8 +50,21 @@
 
 ### Графики для перечесечений вторичных структур с экспериментами
 
+#### Гистограмма длин для ZHunt
+
+<img src="https://github.com/gudki/hse21_H3K27me3_ZDNA_human/raw/main/images/len_hist.zhunt.png" width="500"/>
+
+#### Расположение относительно аннотированных генов для ZHunt
+
+<img src="https://github.com/gudki/hse21_H3K27me3_ZDNA_human/raw/main/images/chip_seeker.zhunt.plotAnnoPie.png" width="500"/>
+
 #### Гистограмма длин пересечений
 
 <img src="https://github.com/gudki/hse21_H3K27me3_ZDNA_human/raw/main/images/len_hist.zhunt.intersect.png" width="500"/>
+
+#### Расположение относительно аннотированных генов для пересечений
+
+<img src="https://github.com/gudki/hse21_H3K27me3_ZDNA_human/raw/main/images/chip_seeker.zhunt.intersect.plotAnnoPie.png" width="500"/>
+
 
 
