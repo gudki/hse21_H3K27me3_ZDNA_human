@@ -72,8 +72,8 @@
 
 chr1:165,082,335-165,091,566
 
-<img src="https://github.com/gudki/hse21_H3K27me3_ZDNA_human/raw/main/images/genome1.png" width="500"/>
+<img src="https://github.com/gudki/hse21_H3K27me3_ZDNA_human/raw/main/images/genome1.png" width="1000"/>
 
 chr1:165,409,118-165,418,349
 
-<img src="https://github.com/gudki/hse21_H3K27me3_ZDNA_human/raw/main/images/genome2.png" width="500"/>
+<img src="https://github.com/gudki/hse21_H3K27me3_ZDNA_human/raw/main/images/genome2.png" width="1000"/>
