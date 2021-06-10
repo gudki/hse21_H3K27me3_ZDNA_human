@@ -112,6 +112,20 @@ cat  *.filtered.bed | sort -k1,1 -k2,2n | bedtools merge > H3K27me3_H1.merge.hg1
 sort -k1,1 -k2,2n H3K27me3_H1.merge.hg19.bed > H3K27me3_H1.merge.hg19.sorted.bed
 bedtools intersect  -a H3K27me3_H1.merge.hg19.sorted.bed -b  zhunt.bed  >  zhunt.intersect.bed
 
+Команды для визуализации в геномном браузере:
+
+track visibility=dense name="ENCFF599KDF"  description="H3K27me3_H1.ENCFF599KDF.hg19.filtered.bed"
+https://github.com/gudki/hse21_H3K27me3_ZDNA_human/blob/main/data/H3K27me3_H1.ENCFF599KDF.hg19.filtered.bed?raw=true
+
+track visibility=dense name="ENCFF050CUG"  description="H3K27me3_H1.ENCFF050CUG.hg19.filtered.bed"
+https://github.com/gudki/hse21_H3K27me3_ZDNA_human/blob/main/data/H3K27me3_H1.ENCFF050CUG.hg19.filtered.bed?raw=true
+
+track visibility=dense name="zhunt"  color=0,200,0   description="zhunt.bed"
+https://github.com/gudki/hse21_H3K27me3_ZDNA_human/raw/main/data/zhunt.bed
+
+track visibility=dense name="zhunt.intersect"  color=200,0,0  description="zhunt.intersect.bed"
+https://github.com/gudki/hse21_H3K27me3_ZDNA_human/raw/main/data/zhunt.intersect.bed
+
 
  
  
