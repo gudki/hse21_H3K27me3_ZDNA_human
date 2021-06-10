@@ -85,3 +85,33 @@ chr1:165,409,118-165,418,349
  ### Таблица с результатами GO анализа:
  
  <img src="https://github.com/gudki/hse21_H3K27me3_ZDNA_human/raw/main/images/GO_image.png" width="1000"/>
+ 
+ ## Команды:
+ 
+ Сначала обрезаем столбцы в .bed файлах и распаковываем их
+ 
+zcat ENCFF050CUG.bed.gz  |  cut -f1-5 > H3K27me3_H1.ENCFF050CUG.hg38.bed
+zcat ENCFF599KDF.bed.gz  |  cut -f1-5 > H3K27me3_H1.ENCFF599KDF.hg38.bed
+
+затем переводим с версии генома hg83 на hg19 при помощи утилиты liftOver
+
+liftOver H3K27me3_H1.ENCFF599KDF.hg38.bed hg38ToHg19.over.chain.gz H3K27me3_H1.ENCFF599KDF.hg19.bed H3K27me3_H1.ENCFF599KDF.unmapped.bed
+liftOver H3K27me3_H1.ENCFF050CUG.hg38.bed hg38ToHg19.over.chain.gz H3K27me3_H1.ENCFF050CUG.hg19.bed H3K27me3_H1.ENCFF050CUG.unmapped.bed.
+
+Чтобы отфильтровать участки по длине можем воспользоваться awk
+
+cat H3K27me3_H1.ENCFF050CUG.hg19.bed | awk '$3-$2<5000' > H3K27me3_H1.ENCFF050CUG.hg19.filtered.bed
+cat H3K27me3_H1.ENCFF599KDF.hg19.bed | awk '$3-$2<5000' >  H3K27me3_H1.ENCFF599KDF.hg19.filtered.bed
+
+затем отфильтрованные файлы заливаем в один
+
+cat  *.filtered.bed | sort -k1,1 -k2,2n | bedtools merge > H3K27me3_H1.merge.hg19.bed 
+ 
+Сортируем файлы и получаем файл с пересечениями
+
+sort -k1,1 -k2,2n H3K27me3_H1.merge.hg19.bed > H3K27me3_H1.merge.hg19.sorted.bed
+bedtools intersect  -a H3K27me3_H1.merge.hg19.sorted.bed -b  zhunt.bed  >  zhunt.intersect.bed
+
+
+ 
+ 
